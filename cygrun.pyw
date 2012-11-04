@@ -1,4 +1,7 @@
 #!/bin/python
+# Author: Marko Mahnič
+# Created: October 2012
+# License: GPL
 import sys, re
 import socket
 

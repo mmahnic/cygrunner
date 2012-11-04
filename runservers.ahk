@@ -1,3 +1,6 @@
+; Author: Marko Mahnič
+; Created: October 2012
+; License: GPL
 #SingleInstance force
 
 DetectHiddenWindows, On

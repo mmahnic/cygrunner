@@ -1,4 +1,7 @@
-# #!/bin/bython
+#!/bin/bython
+# Author: Marko Mahnič
+# Created: October 2012
+# License: GPL
 import os, sys, time
 import shlex
 import SocketServer
