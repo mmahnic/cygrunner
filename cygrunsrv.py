@@ -9,8 +9,8 @@ import subprocess as subp
 
 reqid = 0
 apps = {
-        "gvim":    (0, ["/home/mmarko/usr/bin/vim.gtk", "-g"]),
-        "gvimsrv": (1, ["/home/mmarko/usr/bin/vim.gtk", "-g", "--servername", "CYGVIM", "--remote-silent"])
+        "gvim":    (0, ["/usr/bin/vim.gtk", "-g"]),
+        "gvimsrv": (1, ["/usr/bin/vim.gtk", "-g", "--servername", "CYGVIM", "--remote-silent"])
        }
 def readRc():
     rcfile = "~/.config/cygrun/cygrunsrvrc"
