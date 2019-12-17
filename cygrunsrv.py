@@ -1,4 +1,4 @@
-#!/bin/bython
+﻿#!/bin/bython
 # Author: Marko Mahnič
 # Created: October 2012
 # License: GPL
@@ -9,8 +9,8 @@ import subprocess as subp
 
 reqid = 0
 apps = {
-        "gvim":    (0, ["/usr/bin/vim.gtk", "-g"]),
-        "gvimsrv": (1, ["/usr/bin/vim.gtk", "-g", "--servername", "CYGVIM", "--remote-silent"])
+        "gvim":    (0, ["/usr/local/bin/gvim", "-g"]),
+        "gvimsrv": (1, ["/usr/local/bin/gvim", "-g", "--servername", "CYGVIM", "--remote-silent"])
        }
 def readRc():
     rcfile = "~/.config/cygrun/cygrunsrvrc"

@@ -1,4 +1,4 @@
-#!/bin/python
+﻿#!/bin/python
 # Author: Marko Mahnič
 # Created: October 2012
 # License: GPL
@@ -8,7 +8,7 @@ import socket
 HOST, PORT = "localhost", 9999
 # args = [ s.replace("\\", "/") for s in sys.argv[1:] ]
 args = [ '%s' % re.escape(s) for s in sys.argv[1:] ]
-data = " ".join(args)
+data = " ".join(args).encode("utf-8")
 
 # Create a socket (SOCK_STREAM means a TCP socket)
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -17,7 +17,7 @@ try:
     # Connect to server and send data
     sock.connect((HOST, PORT))
     # print "sending", args
-    sock.sendall(data + "\n")
+    sock.sendall(data + b"\n")
 
     # Receive data from the server and shut down
     received = sock.recv(1024)
