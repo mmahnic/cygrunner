@@ -7,6 +7,12 @@ import shlex
 import SocketServer
 import subprocess as subp
 
+# Set the environment variables for wsl
+if not "DISPLAY" in os.environ:
+    os.environ["DISPLAY"]="localhost:0.0"
+if not "LIBGL_ALWAYS_INDIRECT" in os.environ:
+    os.environ["LIBGL_ALWAYS_INDIRECT"]="Yes"
+
 reqid = 0
 apps = {
         "gvim":    (0, ["/usr/local/bin/gvim", "-g"]),
